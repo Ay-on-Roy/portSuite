@@ -2270,11 +2270,11 @@ function renderEducation() {
         </div>
       </div>
       <div class="form-grid">
-        <div class="form-group"><label>Degree / Qualification</label><input type="text" value="${edu.degree}" oninput="state.education[${idx}].degree=this.value" placeholder="B.Sc. Computer Science"></div>
-        <div class="form-group"><label>Institution</label><input type="text" value="${edu.institution}" oninput="state.education[${idx}].institution=this.value" placeholder="University of Dhaka"></div>
-        <div class="form-group"><label>Start Year</label><input type="number" value="${edu.year_start}" oninput="state.education[${idx}].year_start=this.value" placeholder="2018" min="1950" max="2030"></div>
-        <div class="form-group"><label>End Year (or "Present")</label><input type="text" value="${edu.year_end}" oninput="state.education[${idx}].year_end=this.value" placeholder="2022 or Present"></div>
-        <div class="form-group"><label>Result / GPA</label><input type="text" value="${edu.result}" oninput="state.education[${idx}].result=this.value" placeholder="3.8/4.0 or First Class"></div>
+        <div class="form-group"><label>Degree / Qualification</label><input type="text" value="${edu.degree}" oninput="state.education[${idx}].degree=this.value" placeholder="B.Sc. EEE"></div>
+        <div class="form-group"><label>Institution</label><input type="text" value="${edu.institution}" oninput="state.education[${idx}].institution=this.value" placeholder="University of Uganda"></div>
+        <div class="form-group"><label>Start Year</label><input type="number" value="${edu.year_start}" oninput="state.education[${idx}].year_start=this.value" placeholder="2020" min="1950" max="2030"></div>
+        <div class="form-group"><label>End Year (or "Present")</label><input type="text" value="${edu.year_end}" oninput="state.education[${idx}].year_end=this.value" placeholder="2025 or Present"></div>
+        <div class="form-group"><label>Result / GPA</label><input type="text" value="${edu.result}" oninput="state.education[${idx}].result=this.value" placeholder="3.65/4.0 or First Class"></div>
         <div class="form-group full"><label>Achievements / Activities (optional)</label><textarea oninput="state.education[${idx}].achievements=this.value.split('\\n')" placeholder="Dean's List, Research award...">${(edu.achievements||[]).join('\n')}</textarea></div>
         ${renderCustomFields('education', idx, edu.customFields||[])}
       </div>
@@ -2306,8 +2306,8 @@ function renderExperience() {
         </div>
       </div>
       <div class="form-grid">
-        <div class="form-group"><label>Job Title</label><input type="text" value="${exp.title}" oninput="state.experience[${idx}].title=this.value" placeholder="Senior Developer"></div>
-        <div class="form-group"><label>Company / Organization</label><input type="text" value="${exp.company}" oninput="state.experience[${idx}].company=this.value" placeholder="Google"></div>
+        <div class="form-group"><label>Job Title</label><input type="text" value="${exp.title}" oninput="state.experience[${idx}].title=this.value" placeholder="Research Assistant"></div>
+        <div class="form-group"><label>Company / Organization</label><input type="text" value="${exp.company}" oninput="state.experience[${idx}].company=this.value" placeholder="Uganda University"></div>
         <div class="form-group"><label>Employment Type</label>
           <select onchange="state.experience[${idx}].type=this.value">
             <option ${exp.type=='Full-time'?'selected':''}>Full-time</option>
@@ -2317,7 +2317,7 @@ function renderExperience() {
             <option ${exp.type=='Contract'?'selected':''}>Contract</option>
           </select>
         </div>
-        <div class="form-group"><label>Start Date</label><input type="text" value="${exp.year_start}" oninput="state.experience[${idx}].year_start=this.value" placeholder="Jan 2021"></div>
+        <div class="form-group"><label>Start Date</label><input type="text" value="${exp.year_start}" oninput="state.experience[${idx}].year_start=this.value" placeholder="Jan 2023"></div>
         <div class="form-group"><label>End Date</label><input type="text" value="${exp.year_end}" oninput="state.experience[${idx}].year_end=this.value" placeholder="Present"></div>
         <div class="form-group full"><label>Description / Responsibilities</label><textarea oninput="state.experience[${idx}].description=this.value" placeholder="Describe your role, impact, achievements...">${exp.description}</textarea></div>
         <div class="form-group full">
@@ -2551,9 +2551,9 @@ function renderAwards() {
         <div class="dynamic-item-actions"><button class="btn-icon btn-remove" onclick="removeItem('awards',${idx})">✕</button></div>
       </div>
       <div class="form-grid">
-        <div class="form-group full"><label>Award Title</label><input type="text" value="${a.title}" oninput="state.awards[${idx}].title=this.value" placeholder="Best Research Paper Award"></div>
-        <div class="form-group"><label>Year</label><input type="number" value="${a.year}" oninput="state.awards[${idx}].year=this.value" placeholder="2023"></div>
-        <div class="form-group"><label>Awarding Organization</label><input type="text" value="${a.org}" oninput="state.awards[${idx}].org=this.value" placeholder="IEEE Bangladesh"></div>
+        <div class="form-group full"><label>Award Title</label><input type="text" value="${a.title}" oninput="state.awards[${idx}].title=this.value" placeholder="Best Thesis Award"></div>
+        <div class="form-group"><label>Year</label><input type="number" value="${a.year}" oninput="state.awards[${idx}].year=this.value" placeholder="2025"></div>
+        <div class="form-group"><label>Awarding Organization</label><input type="text" value="${a.org}" oninput="state.awards[${idx}].org=this.value" placeholder="University in Bangladesh"></div>
         <div class="form-group full"><label>Description (optional)</label><textarea oninput="state.awards[${idx}].description=this.value" placeholder="Brief description...">${a.description}</textarea></div>
         <div class="form-group full">
           <label>Award Image (optional)</label>
@@ -2588,9 +2588,9 @@ function renderCerts() {
         <div class="dynamic-item-actions"><button class="btn-icon btn-remove" onclick="removeItem('certs',${idx})">✕</button></div>
       </div>
       <div class="form-grid">
-        <div class="form-group full"><label>Certification Name</label><input type="text" value="${c.name}" oninput="state.certs[${idx}].name=this.value" placeholder="AWS Solutions Architect"></div>
-        <div class="form-group"><label>Issuing Organization</label><input type="text" value="${c.org}" oninput="state.certs[${idx}].org=this.value" placeholder="Amazon Web Services"></div>
-        <div class="form-group"><label>Year Obtained</label><input type="number" value="${c.year}" oninput="state.certs[${idx}].year=this.value" placeholder="2023"></div>
+        <div class="form-group full"><label>Certification Name</label><input type="text" value="${c.name}" oninput="state.certs[${idx}].name=this.value" placeholder="LinkedIn"></div>
+        <div class="form-group"><label>Issuing Organization</label><input type="text" value="${c.org}" oninput="state.certs[${idx}].org=this.value" placeholder="Web Services"></div>
+        <div class="form-group"><label>Year Obtained</label><input type="number" value="${c.year}" oninput="state.certs[${idx}].year=this.value" placeholder="2025"></div>
         <div class="form-group full"><label>Credential Link (optional)</label><input type="url" value="${c.link}" oninput="state.certs[${idx}].link=this.value" placeholder="https://verify..."></div>
         <div class="form-group full"><label>Description (optional)</label><textarea oninput="state.certs[${idx}].description=this.value" placeholder="What this certification covers...">${c.description}</textarea></div>
         <div class="form-group full">
@@ -2632,7 +2632,7 @@ function renderGallery() {
         <div class="dynamic-item-actions"><button class="btn-icon btn-remove" onclick="removeItem('gallery',${idx})">✕</button></div>
       </div>
       <div class="form-grid">
-        <div class="form-group"><label>Title</label><input type="text" value="${g.title}" oninput="state.gallery[${idx}].title=this.value" placeholder="Mountain Trek 2024"></div>
+        <div class="form-group"><label>Title</label><input type="text" value="${g.title}" oninput="state.gallery[${idx}].title=this.value" placeholder="Paris 2026"></div>
         <div class="form-group"><label>Type</label>
           <select onchange="state.gallery[${idx}].type=this.value">
             <option ${g.type=='image'?'selected':''} value="image">Photo / Image</option>
@@ -2695,7 +2695,7 @@ function renderExtras() {
       </div>
       <div class="form-group" style="margin-bottom:16px;">
         <label>Section Name</label>
-        <input type="text" value="${ex.sectionName}" oninput="state.extras[${idx}].sectionName=this.value" placeholder="e.g. Volunteer Work, Languages, Patents...">
+        <input type="text" value="${ex.sectionName}" oninput="state.extras[${idx}].sectionName=this.value" placeholder="e.g. Volunteer Work, Patents...">
       </div>
       <div class="form-group full" style="margin-bottom:16px;">
         <label>Section Image (optional)</label>
@@ -2764,7 +2764,7 @@ function renderLanguages() {
       <div class="form-grid">
         <div class="form-group">
           <label>Language Name</label>
-          <input type="text" value="${lang.language}" oninput="state.languages[${idx}].language=this.value" placeholder="English, Spanish, French...">
+          <input type="text" value="${lang.language}" oninput="state.languages[${idx}].language=this.value" placeholder="Bangla, Urdu, French...">
         </div>
         <div class="form-group">
           <label>Proficiency Level</label>
@@ -2800,15 +2800,15 @@ function renderSkillTests() {
       <div class="form-grid">
         <div class="form-group">
           <label>Test Name</label>
-          <input type="text" value="${test.testName}" oninput="state.skillTests[${idx}].testName=this.value" placeholder="IELTS, GRE, TOEFL, SAT...">
+          <input type="text" value="${test.testName}" oninput="state.skillTests[${idx}].testName=this.value" placeholder="GRE, IELTS, TOEFL...">
         </div>
         <div class="form-group">
           <label>Date</label>
-          <input type="text" value="${test.date}" oninput="state.skillTests[${idx}].date=this.value" placeholder="Jan 2024">
+          <input type="text" value="${test.date}" oninput="state.skillTests[${idx}].date=this.value" placeholder="Dec 2024">
         </div>
         <div class="form-group">
           <label>Total Score</label>
-          <input type="text" value="${test.totalScore}" oninput="state.skillTests[${idx}].totalScore=this.value" placeholder="e.g., 8.5/9.0">
+          <input type="text" value="${test.totalScore}" oninput="state.skillTests[${idx}].totalScore=this.value" placeholder="e.g., 329/340">
         </div>
         <div class="form-group">
           <label>Certificate Link</label>
@@ -2820,7 +2820,7 @@ function renderSkillTests() {
         <div id="scoresContainer${idx}">
           ${(test.scores||[]).map((s, sidx) => `
             <div style="display:flex; gap:8px; margin-bottom:8px;">
-              <input type="text" value="${s.component}" oninput="state.skillTests[${idx}].scores[${sidx}].component=this.value" placeholder="Component (e.g., Listening, Reading, Writing, Speaking)" style="flex:1.6;min-width:0;">
+              <input type="text" value="${s.component}" oninput="state.skillTests[${idx}].scores[${sidx}].component=this.value" placeholder="Component (e.g., Verbal Reasoning, Quantitative Reasoning, Analytical Writing)" style="flex:1.6;min-width:0;">
               <input type="text" value="${s.score}" oninput="state.skillTests[${idx}].scores[${sidx}].score=this.value" placeholder="Score" style="flex:0.6;min-width:60px;">
               <button class="btn-icon btn-remove" onclick="removeSkillScore(${idx},${sidx})" style="padding:6px;">✕</button>
             </div>
