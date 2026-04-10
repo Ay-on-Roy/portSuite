@@ -2156,8 +2156,8 @@ function animateCounter(id, target, suffix='') {
 }
 // Pre-launch stats (update after deployment)
 setTimeout(() => {
-  const portfolioCount = parseInt(localStorage.getItem('pf_portfolio_count') || '0');
-  const countriesCount = parseInt(localStorage.getItem('pf_countries_count') || '1');
+  // const portfolioCount = parseInt(localStorage.getItem('pf_portfolio_count') || '10+');
+  // const countriesCount = parseInt(localStorage.getItem('pf_countries_count') || '3+');
   animateCounter('counter-portfolios', portfolioCount);
   animateCounter('counter-countries', countriesCount);
 }, 800);
