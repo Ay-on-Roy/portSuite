@@ -1,0 +1,289 @@
+{
+  "_version": 1,
+  "_updated": "2025-01-01T00:00:00Z",
+  "_note": "This file is your portfolio database. Edit directly here or via the app.",
+
+  "personal": {
+    "name": "Your Name",
+    "title": "Professional Title",
+    "email": "you@example.com",
+    "phone": "",
+    "location": "Your City, Country",
+    "website": "",
+    "linkedin": "",
+    "github": "",
+    "twitter": "",
+    "facebook": "",
+    "instagram": "",
+    "summary": "Write your professional summary here. This appears in your hero section.",
+    "photo": "",
+    "cv": "",
+    "dob": "",
+    "age": null,
+    "status": {
+      "type": "available",
+      "label": "Available for Work",
+      "message": "Actively looking for new opportunities"
+    }
+  },
+
+  "design": {
+    "theme": "midnight",
+    "navbar": "classic",
+    "font": "Playfair Display",
+    "photoStyle": "circle",
+    "accentColor": "#c9a84c"
+  },
+
+  "education": [
+    {
+      "id": 1,
+      "degree": "B.Sc. Computer Science",
+      "institution": "University Name",
+      "year_start": "2018",
+      "year_end": "2022",
+      "result": "3.8 / 4.0",
+      "achievements": ["Dean's List 2020", "Best Research Paper Award"],
+      "customFields": []
+    }
+  ],
+
+  "experience": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "company": "Company Name",
+      "type": "Full-time",
+      "year_start": "Jan 2023",
+      "year_end": "Present",
+      "description": "Describe your responsibilities and achievements here.",
+      "image": "",
+      "customFields": []
+    }
+  ],
+
+  "skills": ["JavaScript", "Python", "React", "Node.js"],
+
+  "skillCategories": [
+    {
+      "id": 1,
+      "name": "Frontend",
+      "skills": "React, Vue, CSS, HTML",
+      "description": "Building responsive user interfaces"
+    },
+    {
+      "id": 2,
+      "name": "Backend",
+      "skills": "Node.js, Python, Express, Django",
+      "description": "Server-side development and API design"
+    },
+    {
+      "id": 3,
+      "name": "Databases",
+      "skills": "MongoDB, PostgreSQL, Firebase, Redis",
+      "description": "Data management and optimization"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "My Project",
+      "description": "A brief description of what this project does.",
+      "link": "https://myproject.com",
+      "github": "https://github.com/username/project",
+      "tech": "React, Node.js, Firebase"
+    }
+  ],
+
+  "research": [
+    {
+      "id": 1,
+      "title": "AI-Powered Web Applications",
+      "description": "Research on integrating machine learning models into modern web applications for enhanced user experience and personalization.",
+      "link": "https://research.example.com/ai-web"
+    },
+    {
+      "id": 2,
+      "title": "Performance Optimization in React",
+      "description": "A comprehensive study on rendering optimization techniques and best practices for building high-performance React applications.",
+      "link": "https://research.example.com/react-perf"
+    },
+    {
+      "id": 3,
+      "title": "Cybersecurity in Cloud Infrastructure",
+      "description": "Investigation into security protocols and vulnerability management strategies for cloud-based systems.",
+      "link": "https://research.example.com/cloud-security"
+    }
+  ],
+
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Getting Started with React Hooks",
+      "date": "2025-01-15",
+      "link": "https://medium.com/my-blog/react-hooks",
+      "excerpt": "A comprehensive guide to understanding and using React Hooks in your projects.",
+      "content": "React Hooks have revolutionized the way we write React components. In this article, we'll explore the fundamentals of Hooks.\n\n## What are Hooks?\n\nHooks are functions that let you 'hook into' React state and lifecycle features from function components. Before Hooks, you had to use class components to access these features.\n\n## useState Hook\n\nThe useState hook is the most basic hook. It allows you to add state to functional components:\n\nconst [count, setCount] = useState(0);\n\n## useEffect Hook\n\nThe useEffect hook lets you perform side effects in function components. It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount combined.\n\n## Best Practices\n\n1. Only call Hooks at the top level\n2. Only call Hooks from React functions\n3. Use the ESLint plugin to enforce these rules\n\nHooks make your code more reusable and easier to understand. Start using them today!",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Building Scalable Node.js Applications",
+      "date": "2025-01-10",
+      "link": "https://medium.com/my-blog/nodejs-scalable",
+      "excerpt": "Best practices for building enterprise-grade Node.js applications.",
+      "content": "Scalability is crucial when building Node.js applications. This article covers the key strategies and patterns you need to know.\n\n## Why Scalability Matters\n\nAs your application grows, you need systems and practices that can handle increased load without degrading performance.\n\n## Horizontal vs Vertical Scaling\n\nHorizontal scaling involves adding more servers, while vertical scaling means upgrading existing servers.\n\n## Load Balancing\n\nDistribute incoming requests across multiple servers to prevent any single point of failure.\n\n## Caching Strategies\n\n- Implement Redis for session management\n- Use CDN for static assets\n- Cache database query results\n\n## Database Optimization\n\nOptimize queries, use indexing, and consider database sharding for large datasets.\n\nThese patterns are essential for building production-ready applications.",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Web Performance: Core Web Vitals",
+      "date": "2025-01-05",
+      "link": "https://medium.com/my-blog/web-vitals",
+      "excerpt": "Understanding Google's Core Web Vitals for better user experience.",
+      "content": "Google's Core Web Vitals are essential metrics for measuring user experience. Let's break them down:\n\n## Largest Contentful Paint (LCP)\n\nMeasures loading performance. Target: less than 2.5 seconds.\n\n## First Input Delay (FID)\n\nMeasures interactivity. Target: less than 100 milliseconds.\n\n## Cumulative Layout Shift (CLS)\n\nMeasures visual stability. Target: less than 0.1.\n\n## How to Optimize\n\n1. Minimize CSS and JavaScript\n2. Compress images\n3. Implement lazy loading\n4. Use a Content Delivery Network (CDN)\n5. Enable browser caching\n\n## Tools to Measure\n\n- Google Lighthouse\n- PageSpeed Insights\n- WebPageTest\n\nImproving Core Web Vitals increases user satisfaction and improves SEO rankings.",
+      "image": ""
+    }
+  ],
+
+  "awards": [
+    {
+      "id": 1,
+      "title": "Best Developer Award",
+      "issuer": "Tech Conference 2024",
+      "date": "March 2024"
+    },
+    {
+      "id": 2,
+      "title": "Innovation Excellence Grant",
+      "issuer": "National Science Foundation",
+      "date": "February 2024"
+    },
+    {
+      "id": 3,
+      "title": "Community Contribution Medal",
+      "issuer": "Open Source Foundation",
+      "date": "January 2024"
+    }
+  ],
+
+  "certs": [
+    {
+      "id": 1,
+      "title": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "December 2023",
+      "link": "https://verify.aws.com/cert"
+    },
+    {
+      "id": 2,
+      "title": "Google Cloud Professional Architect",
+      "issuer": "Google Cloud",
+      "date": "November 2023",
+      "link": "https://verify.cloud.google.com/cert"
+    }
+  ],
+
+  "hobbies": ["Photography", "Chess", "Hiking", "Open Source Contribution"],
+
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Project Showcase 2024",
+      "description": "Screenshots and demos of recent projects",
+      "type": "Web Development",
+      "link": "",
+      "images": [
+        {
+          "url": "https://via.placeholder.com/600x400?text=Project+1",
+          "caption": "E-commerce Platform"
+        },
+        {
+          "url": "https://via.placeholder.com/600x400?text=Project+2",
+          "caption": "Dashboard Application"
+        },
+        {
+          "url": "https://via.placeholder.com/600x400?text=Project+3",
+          "caption": "Mobile App Interface"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Design System Components",
+      "description": "UI component library and design tokens",
+      "type": "Design",
+      "link": "",
+      "images": [
+        {
+          "url": "https://via.placeholder.com/600x400?text=Button+Components",
+          "caption": "Button Component Library"
+        },
+        {
+          "url": "https://via.placeholder.com/600x400?text=Form+Elements",
+          "caption": "Form Elements"
+        }
+      ]
+    }
+  ],
+
+  "extras": [],
+
+  "languages": [
+    {
+      "id": 1,
+      "language": "English",
+      "proficiency": "Native"
+    }
+  ],
+
+  "skillTests": [
+    {
+      "id": 1,
+      "testName": "IELTS",
+      "date": "Jan 2024",
+      "totalScore": "8.5/9.0",
+      "link": "",
+      "scores": [
+        {"component": "Listening", "score": "8.5"},
+        {"component": "Reading", "score": "9.0"},
+        {"component": "Writing", "score": "8.0"},
+        {"component": "Speaking", "score": "8.5"}
+      ]
+    }
+  ],
+
+  "chatQA": [
+    {
+      "id": 1,
+      "question": "Are you available for freelance work?",
+      "answer": "Yes, I am currently available for freelance and contract work. Feel free to reach out via email."
+    },
+    {
+      "id": 2,
+      "question": "What is your current role?",
+      "answer": "I am currently working as a Software Engineer, focused on full-stack web development."
+    },
+    {
+      "id": 3,
+      "question": "How can I contact you?",
+      "answer": "You can reach me at my email address or connect with me on LinkedIn. I typically respond within 24 hours."
+    },
+    {
+      "id": 4,
+      "question": "What technologies do you specialize in?",
+      "answer": "I specialize in JavaScript, React, Node.js, and Python. I have experience with both frontend and backend development."
+    }
+  ],
+
+  "hiddenSections": [],
+
+  "comments": [],
+
+  "github_config": {
+    "username": "",
+    "repo": "",
+    "branch": "main"
+  }
+}

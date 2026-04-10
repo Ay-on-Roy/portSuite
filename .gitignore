@@ -1,0 +1,32 @@
+# Don't commit your actual passwords or tokens
+# These should only be in localStorage or environment
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Build/Dist
+dist/
+build/
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary
+.env
+.env.local
+temp/
+cache/
+
+# Keep these files:
+# data.json - is your portfolio data (public is ok)
