@@ -2,8 +2,9 @@
 
 **Build. Customize. Deploy. For free, forever.**
 
-Try here: https://ay-on-roy.github.io/portSuite/portsuite.html 
-\nA modern, zero-backend portfolio builder that generates pure HTML/CSS/JS portfolios. Create a professional portfolio in minutes, customize it with 9 beautiful themes, and deploy to GitHub Pages with zero coding required.
+Try here: https://ay-on-roy.github.io/portSuite/portsuite.html \
+
+A modern, zero-backend portfolio builder that generates pure HTML/CSS/JS portfolios. Create a professional portfolio in minutes, customize it with 9 beautiful themes, and deploy to GitHub Pages with zero coding required.
 
 ## ✨ Features
 
